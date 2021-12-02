@@ -8,8 +8,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/test/resources/features",
-		glue= {"omecenCucumberProject.LoginTests"}
-		
+				tags={"@smoke"},
+		glue= {"omecenCucumberProject.LoginTests"},		
+		dryRun=false
 		)
 public class BddRunner {
 
